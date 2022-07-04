@@ -21,11 +21,23 @@
 }
 
 .flex-blackjack-row-1 div{
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
-    height: 350px;
+    height: 400px;
     text-align: center;
+    align-items: center;
     flex: 1;
+    flex-wrap: wrap;
+}
+
+.flex-blackjack-row-1 img{
+    max-width: 18%;
+    margin: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+#your-box {
+    overflow: auto;
 }
 
 .flex-blackjack-row-2 button{
