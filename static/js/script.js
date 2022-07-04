@@ -44,3 +44,9 @@ function blackjackDeal() {
         dealerImages[i].remove();
     }
 }
+
+function updateScore(card, activePlayer){
+    activePlayer['score']
+}
+
+//minute: 6:13:00/7:57:27
