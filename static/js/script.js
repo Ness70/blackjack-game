@@ -88,3 +88,13 @@ function dealerLogic() {
     updateScore(card, DEALER);
     showScore(DEALER);
 }
+
+
+
+if (true) {
+    var x = 5;
+    let z = 7;
+    const y = 6;
+}
+
+console.log(x+y+z);
