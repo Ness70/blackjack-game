@@ -37,7 +37,7 @@ function randomCard() {
 
 
 function showCard(card, activePlayer) { 
-    if (activePlayer['score'] <= 21) { //showing a bust if player exceeds 21
+    if (activePlayer['score'] <= 21) { //Showing a bust if player exceeds 21
         let cardImage = document.createElement('img');
         cardImage.src = `static/images/${card}.png`;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
