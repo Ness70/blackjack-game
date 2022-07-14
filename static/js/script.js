@@ -89,12 +89,25 @@ function dealerLogic() {
     showScore(DEALER);
 }
 
+function computeWinner() {
+    let winner;
 
+    if (YOU['score'] <= 21) {
+        if (YOU['score'] > DEALER['score'] || DEALER['score'] > 21) { //When your score is higher that the dealer or when the dealer BUST but your score is 21 or under
+            console.log('You win!');
+            winner = YOU;
+        } else if (YOU['score'] < DEALER['score']) { //When your score is less than dealer
+            console.log('You lose!');
+            winner = DEALER;
+        } else if (YOU['score'] === DEALER['score']) { //When both your scores match
+            console.log('You drew!');
+        }
+    } else if (YOU['score'] > 21 && DEALER['score'] <= 21) { // When you BUST but Dealer doesn't
+        console.log('You lost!')
+        winner = DEALER;
+    } else if (YOU['score'] > 21 && DEALER['score'] > 21) { // When you both BUST!
+        console.log('You drew!')
+    }
 
-if (true) {
-    var x = 5;
-    let z = 7;
-    const y = 6;
+    return winner;
 }
-
-console.log(x+y+z);
