@@ -48,6 +48,7 @@ function showCard(card, activePlayer) {
 function blackjackDeal() {
     if (blackjackGame['turnsOver'] === true) {
         blackjackGame['isStand'] = false;
+        
         // showResult(computeWinner()); //Use this function when playing 2 player
         let yourImages = document.querySelector('#your-box').querySelectorAll('img');
         let dealerImages = document.querySelector('#dealer-box').querySelectorAll('img');
